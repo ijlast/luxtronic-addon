@@ -1,0 +1,46 @@
+# Normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Treat these as text explicitly
+*.json text
+*.yaml text
+*.yml text
+*.md text
+*.sh text
+*.txt text
+*.conf text
+*.ini text
+*.py text
+*.js text
+*.ts text
+*.css text
+*.html text
+
+# Binary files (never modify line endings)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.jar binary
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Prevent Git from trying to diff binaries
+*.png -diff
+*.jpg -diff
+*.jpeg -diff
+*.gif -diff
+*.ico -diff
+*.svg -diff
+*.jar -diff
+*.zip -diff
+*.tar -diff
+*.gz -diff
+
+# Optional: classify repo as mostly YAML/JSON (Home Assistant style)
+*.json linguist-detectable=true
+*.yaml linguist-detectable=true
+*.yml  linguist-detectable=true

@@ -1,0 +1,23 @@
+name: "Luxtronic Heat Pump Controller"
+version: "0.0.3"
+slug: "luxtronic"
+description: "A REST interface to the Luxtronic Heat Pump"
+arch:
+  - aarch64
+startup: services
+boot: auto
+host_network: true
+init: false
+debug: true
+
+ports:
+  8080/tcp: 8080
+options:
+  heatpump_ip: "192.168.178.6"
+  heatpump_port: 8888
+
+schema:
+  heatpump_ip: str
+  heatpump_port: int
+
+git co
