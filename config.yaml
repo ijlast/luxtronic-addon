@@ -19,5 +19,3 @@ options:
 schema:
   heatpump_ip: str
   heatpump_port: int
-
-git co

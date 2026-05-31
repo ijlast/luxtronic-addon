@@ -2,7 +2,7 @@
 
 echo "Starting Luxtronic Spring Boot service…"
 
-export HEATPUMP_IP="${heatpump_ip}"
-export HEATPUMP_PORT="${heatpump_port}"
+#export HEATPUMP_IP="${heatpump_ip}"
+#export HEATPUMP_PORT="${heatpump_port}"
 
 exec java -jar /app/luxtronic.jar
